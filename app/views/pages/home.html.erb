@@ -1,25 +1,7 @@
-
-<html>
-<head>
-<title>HOME</title>
-</head>
-
-<body bgcolor="#E6E6FA">
-  <div align="center">
-    <hr>
-    <h1>My super HomePage</h1>
-    <hr>
-    <%= image_tag("cat.jpg", height: '350', width: '350')  %>
-    <br>
-    Home sweet HOME for every Rails developer
-    <hr>
-    <footer>
-      <%= link_to 'Alpha_blog', articles_path %>
-      <br>
-      <%= link_to 'About', about_path %>  
-    </footer>
-    <hr>
-  </div>
-</body>
-
-</html>
+<div class="center jumbotron">
+  <%= image_tag("cat.jpg", height: '350', width: '350')  %>
+  <br>
+  <h3>Home sweet HOME for every Rails developer</h3>
+  <br>
+  <%= link_to "About", about_path , class:"btn btn-primary btn-md" %>
+</div>

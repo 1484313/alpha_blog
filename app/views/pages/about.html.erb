@@ -1,22 +1,7 @@
-<html>
-<head>
-<title>ABOUT</title>
-</head>
-
-<body bgcolor="#E6E6FA">
-  <div align="center">
-    <hr>
-    <h1>My super AboutPage</h1>
-    <hr>
-    <%= image_tag("cat.jpg", height: '350', width: '350')  %>
-    <br>
-    Every kitty dreams ABOUT becoming Rails developer
-    <hr>
-    <footer>
-      <%= link_to 'Home', root_path %>  
-    </footer>
-    <hr>
-  </div>
-</body>
-
-</html>
+<div class="center jumbotron">
+  <%= image_tag("cat.jpg", height: '350', width: '350')  %>
+  <br>
+  <h3>Every kitty dreams ABOUT becoming Rails developer</h3>
+  <br>
+  <%= link_to "Home", root_path , class:"btn btn-primary btn-md" %>
+</div>
