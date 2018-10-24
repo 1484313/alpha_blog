@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_23_095501) do
+ActiveRecord::Schema.define(version: 2018_10_24_081944) do
+
+  create_table "article_categories", force: :cascade do |t|
+    t.integer "article_id"
+    t.integer "category_id"
+  end
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -25,6 +30,13 @@ ActiveRecord::Schema.define(version: 2018_10_23_095501) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.string "#<ActiveRecord::ConnectionAdapters::SQLite3::TableDefinition:0x00562f60699908>"
+  end
+
+  create_table "category_tables", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "#<ActiveRecord::ConnectionAdapters::SQLite3::TableDefinition:0x0055c691f47c18>"
   end
 
   create_table "users", force: :cascade do |t|
